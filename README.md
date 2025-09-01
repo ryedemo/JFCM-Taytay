@@ -26,9 +26,9 @@
     .login-box {
       position: relative;
       background: rgba(255,255,255,0.97);
-      padding: 80px 70px;
+      padding: 60px 50px; /* slightly smaller */
       border-radius: 30px;
-      width: 650px;
+      width: 500px; /* smaller width */
       max-width: 95%;
       text-align: center;
       box-shadow: 0 15px 50px rgba(0,0,0,0.5);
@@ -36,26 +36,26 @@
     }
 
     .login-box img {
-      width: 180px;
+      width: 130px; /* smaller logo for readability */
       border-radius: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       border: 4px solid #2e7d32;
     }
 
     .login-box h2 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       color: #2e7d32;
-      font-size: 2.2rem;
+      font-size: 1.6rem; /* slightly smaller heading */
     }
 
     input {
       width: 95%;
-      padding: 22px;
-      margin: 16px 0;
+      padding: 16px; /* smaller input */
+      margin: 12px 0;
       border: 1px solid #ccc;
       border-radius: 15px;
       outline: none;
-      font-size: 1.4rem;
+      font-size: 1.1rem; /* smaller text */
       transition: 0.3s;
     }
 
@@ -68,13 +68,13 @@
       background: #2e7d32;
       color: white;
       border: none;
-      padding: 22px;
+      padding: 16px; /* smaller button */
       border-radius: 15px;
       cursor: pointer;
       width: 100%;
-      font-size: 1.4rem;
+      font-size: 1.1rem; /* smaller text */
       transition: 0.3s;
-      margin-top: 20px;
+      margin-top: 16px;
     }
 
     button:hover {
@@ -84,8 +84,8 @@
 
     .error {
       color: red;
-      margin-top: 18px;
-      font-size: 1.2rem;
+      margin-top: 15px;
+      font-size: 1rem; /* slightly smaller error */
     }
 
     @keyframes fadeIn {
@@ -95,22 +95,22 @@
 
     @media (max-width: 600px) {
       .login-box {
-        padding: 60px 40px;
+        padding: 40px 30px;
         width: 90%;
       }
 
       .login-box h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
 
       input {
-        padding: 18px;
-        font-size: 1.2rem;
+        padding: 14px;
+        font-size: 1rem;
       }
 
       button {
-        padding: 18px;
-        font-size: 1.2rem;
+        padding: 14px;
+        font-size: 1rem;
       }
     }
   </style>
