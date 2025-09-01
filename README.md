@@ -20,73 +20,98 @@
     body::before {
       content: "";
       position: absolute; top:0; left:0; right:0; bottom:0;
-      background: rgba(0,0,0,0.6); /* dark overlay for better contrast */
+      background: rgba(0,0,0,0.6);
     }
 
     .login-box {
       position: relative;
-      background: rgba(255,255,255,0.95);
-      padding: 40px 30px;
-      border-radius: 20px;
-      width: 350px;
-      max-width: 90%;
+      background: rgba(255,255,255,0.97);
+      padding: 60px 50px;
+      border-radius: 30px;
+      width: 550px;
+      max-width: 95%;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.5);
       animation: fadeIn 1s ease-in-out;
     }
 
     .login-box img {
-      width: 120px;
+      width: 150px;
       border-radius: 50%;
-      margin-bottom: 20px;
-      border: 3px solid #2e7d32; /* dark green border */
+      margin-bottom: 30px;
+      border: 4px solid #2e7d32;
     }
 
     .login-box h2 {
-      margin-bottom: 25px;
-      color: #2e7d32; /* dark green title */
+      margin-bottom: 35px;
+      color: #2e7d32;
+      font-size: 1.8rem;
     }
 
     input {
-      width: 90%;
-      padding: 12px;
-      margin: 10px 0;
+      width: 95%;
+      padding: 18px;
+      margin: 14px 0;
       border: 1px solid #ccc;
-      border-radius: 10px;
+      border-radius: 15px;
       outline: none;
+      font-size: 1.2rem;
       transition: 0.3s;
     }
 
     input:focus {
       border-color: #2e7d32;
-      box-shadow: 0 0 8px rgba(46,125,50,0.5);
+      box-shadow: 0 0 12px rgba(46,125,50,0.6);
     }
 
     button {
-      background: #2e7d32; /* dark green */
+      background: #2e7d32;
       color: white;
       border: none;
-      padding: 14px;
-      border-radius: 10px;
+      padding: 18px;
+      border-radius: 15px;
       cursor: pointer;
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.2rem;
       transition: 0.3s;
+      margin-top: 18px;
     }
 
     button:hover {
-      background: #14532d; /* darker green on hover */
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: #14532d;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     }
 
     .error {
       color: red;
-      margin-top: 12px;
+      margin-top: 15px;
+      font-size: 1rem;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .login-box {
+        padding: 40px 30px;
+        width: 90%;
+      }
+
+      .login-box h2 {
+        font-size: 1.5rem;
+      }
+
+      input {
+        padding: 15px;
+        font-size: 1.1rem;
+      }
+
+      button {
+        padding: 16px;
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
