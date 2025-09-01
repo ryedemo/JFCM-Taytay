@@ -18,31 +18,30 @@
   position: relative;
 }
 
-
     .login-box {
-      position: relative;
-      background: rgba(255,255,255,0.97);
-      padding: 60px 50px;
-      border-radius: 30px;
-      width: 500px;
-      max-width: 95%;
-      text-align: center;
-      box-shadow: 0 15px 50px rgba(0,0,0,0.5);
-      animation: fadeIn 1s ease-in-out;
-    }
+  position: relative;
+  background: rgba(255,255,255,0.97);
+  padding: 80px 60px;       /* increased padding */
+  border-radius: 35px;      /* slightly more rounded */
+  width: 600px;             /* increased width */
+  max-width: 95%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5); /* bigger shadow */
+  animation: fadeIn 1s ease-in-out;
+}
 
-    .login-box img {
-      width: 130px;
-      border-radius: 50%;
-      margin-bottom: 30px;
-      border: 4px solid #2e7d32;
-    }
+.login-box img {
+  width: 160px;              /* increased image size */
+  border-radius: 50%;
+  margin-bottom: 40px;       /* increased spacing */
+  border: 5px solid #2e7d32; /* slightly thicker border */
+}
 
-    .login-box h2 {
-      margin-bottom: 30px;
-      color: #2e7d32;
-      font-size: 1.6rem;
-    }
+.login-box h2 {
+  margin-bottom: 40px;       /* increased spacing */
+  color: #2e7d32;
+  font-size: 2rem;           /* increased font size */
+}
 
     input {
       width: 95%;
