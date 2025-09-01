@@ -1,4 +1,3 @@
-# JFCM-Taytay
 <!DOCTYPE html>
 <html lang="en">
 <head>
