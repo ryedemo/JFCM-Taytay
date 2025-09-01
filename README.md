@@ -7,28 +7,26 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url('https://source.unsplash.com/1600x900/?church') no-repeat center center/cover;
-      position: relative;
-    }
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Fade effect from top (transparent) to bottom (dark) */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
+              url('https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/476758085_1025079269656180_1508840151996929921_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_ReU3GkJs5AQ7kNvwFJtgKv&_nc_oc=AdlPpscxYoBe9g4Dae6SXd8SP9S1_ioA207PYbYorCAA2QByrjCRxwWvleUdvUgoz7A&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_gid=IJs6CRB_3-4tiip30yaB-Q&oh=00_AfUaAJAsEM1bu2MGoqc3nHFzGJXwRrAhdjpIYEt8dadGmQ&oe=68BB3577') 
+              no-repeat center center/cover;
+  position: relative;
+}
 
-    body::before {
-      content: "";
-      position: absolute; top:0; left:0; right:0; bottom:0;
-      background: rgba(0,0,0,0.6);
-    }
 
     .login-box {
       position: relative;
       background: rgba(255,255,255,0.97);
-      padding: 60px 50px; /* slightly smaller */
+      padding: 60px 50px;
       border-radius: 30px;
-      width: 500px; /* smaller width */
+      width: 500px;
       max-width: 95%;
       text-align: center;
       box-shadow: 0 15px 50px rgba(0,0,0,0.5);
@@ -36,7 +34,7 @@
     }
 
     .login-box img {
-      width: 130px; /* smaller logo for readability */
+      width: 130px;
       border-radius: 50%;
       margin-bottom: 30px;
       border: 4px solid #2e7d32;
@@ -45,17 +43,17 @@
     .login-box h2 {
       margin-bottom: 30px;
       color: #2e7d32;
-      font-size: 1.6rem; /* slightly smaller heading */
+      font-size: 1.6rem;
     }
 
     input {
       width: 95%;
-      padding: 16px; /* smaller input */
+      padding: 16px;
       margin: 12px 0;
       border: 1px solid #ccc;
       border-radius: 15px;
       outline: none;
-      font-size: 1.1rem; /* smaller text */
+      font-size: 1.1rem;
       transition: 0.3s;
     }
 
@@ -68,11 +66,11 @@
       background: #2e7d32;
       color: white;
       border: none;
-      padding: 16px; /* smaller button */
+      padding: 16px;
       border-radius: 15px;
       cursor: pointer;
       width: 100%;
-      font-size: 1.1rem; /* smaller text */
+      font-size: 1.1rem;
       transition: 0.3s;
       margin-top: 16px;
     }
@@ -85,7 +83,7 @@
     .error {
       color: red;
       margin-top: 15px;
-      font-size: 1rem; /* slightly smaller error */
+      font-size: 1rem;
     }
 
     @keyframes fadeIn {
@@ -117,8 +115,7 @@
 </head>
 <body>
   <div class="login-box">
-    <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/308986411_456853616478751_1968050896292484962_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KYLR5qPUdN8Q7kNvwEtYLxe&_nc_oc=Adm9YssLgmfDb3dkGA-y2GF8Idhar6DGOMVCPmB-MmrLYbcrDGD5_Gp68OkMSw77Xe8&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=94tWQNsBobMYJ2tzhQsICQ&oh=00_AfW0xSXiqsnlYACcQLG5C6amQnD7TFE55wLalfduIc-yNA&oe=68BB1ADC" 
-         alt="Church Logo">
+    <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/308986411_456853616478751_1968050896292484962_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KYLR5qPUdN8Q7kNvwEtYLxe&_nc_oc=Adm9YssLgmfDb3dkGA-y2GF8Idhar6DGOMVCPmB-MmrLYbcrDGD5_Gp68OkMSw77Xe8&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=94tWQNsBobMYJ2tzhQsICQ&oh=00_AfW0xSXiqsnlYACcQLG5C6amQnD7TFE55wLalfduIc-yNA&oe=68BB1ADC" alt="Church Logo">
     <h2>Jesus First Christian Ministries - Taytay</h2>
     <input type="text" id="username" placeholder="Enter Username">
     <input type="password" id="password" placeholder="Enter Password">
