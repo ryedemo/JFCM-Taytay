@@ -26,9 +26,9 @@
     .login-box {
       position: relative;
       background: rgba(255,255,255,0.97);
-      padding: 60px 50px;
+      padding: 80px 70px;
       border-radius: 30px;
-      width: 550px;
+      width: 650px;
       max-width: 95%;
       text-align: center;
       box-shadow: 0 15px 50px rgba(0,0,0,0.5);
@@ -36,26 +36,26 @@
     }
 
     .login-box img {
-      width: 150px;
+      width: 180px;
       border-radius: 50%;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       border: 4px solid #2e7d32;
     }
 
     .login-box h2 {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
       color: #2e7d32;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
 
     input {
       width: 95%;
-      padding: 18px;
-      margin: 14px 0;
+      padding: 22px;
+      margin: 16px 0;
       border: 1px solid #ccc;
       border-radius: 15px;
       outline: none;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       transition: 0.3s;
     }
 
@@ -68,13 +68,13 @@
       background: #2e7d32;
       color: white;
       border: none;
-      padding: 18px;
+      padding: 22px;
       border-radius: 15px;
       cursor: pointer;
       width: 100%;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       transition: 0.3s;
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -84,8 +84,8 @@
 
     .error {
       color: red;
-      margin-top: 15px;
-      font-size: 1rem;
+      margin-top: 18px;
+      font-size: 1.2rem;
     }
 
     @keyframes fadeIn {
@@ -95,22 +95,22 @@
 
     @media (max-width: 600px) {
       .login-box {
-        padding: 40px 30px;
+        padding: 60px 40px;
         width: 90%;
       }
 
       .login-box h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       input {
-        padding: 15px;
-        font-size: 1.1rem;
+        padding: 18px;
+        font-size: 1.2rem;
       }
 
       button {
-        padding: 16px;
-        font-size: 1.1rem;
+        padding: 18px;
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -127,14 +127,27 @@
   </div>
 
   <script>
+    // Array of dummy users
+    const users = [
+      { username: "user1", password: "pass123!#" },
+      { username: "user2", password: "465pass!#" },
+      { username: "user3", password: "welcome3!#" },
+      { username: "user4", password: "secret4!#" },
+      { username: "user5", password: "qwerty5!#" },
+      { username: "user6", password: "mypass6!#" },
+      { username: "user7", password: "login777!#" },
+      { username: "user8", password: "testpass8!#" },
+      { username: "user9", password: "9password!#" },
+      { username: "user10", password: "admin10!#" }
+    ];
+
     function login() {
-      const defaultUser = "admin";
-      const defaultPass = "12345";
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
+      const validUser = users.find(user => user.username === username && user.password === password);
 
-      if(username === defaultUser && password === defaultPass){
-        window.location.href = "https://drive.google.com/drive/folders/1i2AuG5zaVImN4wnDyzYrqPGLH-B3iqCP?usp=sharing";
+      if (validUser) {
+        window.location.href = "https://drive.google.com/drive/folders/1JVhwUR3sxIftN5s0PMC8SIJl8MtVVO8i?usp=sharing";
       } else {
         document.getElementById("error-message").textContent = "Invalid username or password!";
       }
