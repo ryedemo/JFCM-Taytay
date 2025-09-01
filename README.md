@@ -21,9 +21,9 @@
     .login-box {
   position: relative;
   background: rgba(255,255,255,0.97);
-  padding: 80px 60px;       /* increased padding */
+  padding: 100px 80px;       /* increased padding */
   border-radius: 35px;      /* slightly more rounded */
-  width: 600px;             /* increased width */
+  width: 800px;             /* increased width */
   max-width: 95%;
   text-align: center;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5); /* bigger shadow */
